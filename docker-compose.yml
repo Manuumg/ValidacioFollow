@@ -1,0 +1,13 @@
+version: '3.6'
+services:
+  db:
+    image: mysql
+    hostname: localhost
+    restart: always
+    environment:
+      MYSQL_DATABASE: examen
+      MYSQL_USER: user
+      MYSQL_PASSWORD: jupiter
+      MYSQL_ROOT_PASSWORD: jupiter*
+    ports:
+      - 3306:3306
